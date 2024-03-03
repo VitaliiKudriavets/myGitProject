@@ -1,9 +1,5 @@
 .DS_Store
-
-/.idea
-
-*~
-
-/log
-/tmp
-/pid
+.idea/
+log/
+tmp/
+pid/
