@@ -2,8 +2,14 @@ package main
 
 import "fmt"
 
+type Point struct {
+	X int
+	Y int
+}
+
 func main() {
-	pointers()
+	structs()
+	//pointers()
 }
 
 func pointers() {
@@ -17,4 +23,11 @@ func pointers() {
 	d := &b
 	*d = *d / 2
 	fmt.Println(b)
+}
+func structs() {
+	p1 := Point{
+		X: 1,
+		Y: 2,
+	}
+	fmt.Println(p1)
 }
