@@ -9,7 +9,7 @@ type Point struct {
 
 func main() {
 	structs()
-	//pointers()
+	pointers()
 }
 
 func pointers() {
