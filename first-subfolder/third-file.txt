@@ -1,3 +1,0 @@
-Third file text
-
-Also changed in the main branch
