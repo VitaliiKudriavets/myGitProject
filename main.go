@@ -7,9 +7,13 @@ type Point struct {
 	Y int
 }
 
+func (p *Point) method() {
+	fmt.Println(p.X, p.Y)
+}
+
 func main() {
-	structs()
 	pointers()
+	structs()
 }
 
 func pointers() {
@@ -30,4 +34,8 @@ func structs() {
 		Y: 2,
 	}
 	fmt.Println(p1)
+	fmt.Println(p1.X, p1.Y)
+	g := &p1
+	fmt.Println(g.Y)
+	g.method()
 }
